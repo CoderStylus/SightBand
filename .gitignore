@@ -1,0 +1,7 @@
+# Gitignore file to allow commits without exeeding 100mb
+
+# Development folders and files
+node_modules/
+.tmp/
+dist/
+*.compiled.*

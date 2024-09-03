@@ -1,0 +1,23 @@
+{
+  "name": "sightband",
+  "version": "1.0.0",
+  "description": "Eyes for the blind.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderstylus/sightband.git"
+  },
+  "author": "Silas Kanellos, Eddie O'Brien, Luka Filipovic, Angus Drever",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderstylus/sightband/issues"
+  },
+  "homepage": "https://github.com/coderstylus/sightband#readme",
+  "devDependencies": {
+    "electron": "^32.0.1"
+  }
+}
