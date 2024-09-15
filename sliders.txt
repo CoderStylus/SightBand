@@ -1,0 +1,15 @@
+
+  <p class="sliderBody">
+    <h2 class="RangeTextSpaceing">Vibration Intensity: <!--- Slider title --> <span id="VibrationIntensity"></span> <!--- displays slider value --></h2>  
+    
+    <div class="slidecontainer"> <!--- div to style more easily -->
+        <input type="range" min="0" max="10" value="5" class="slider" id="vibrationSlider"> <!--- Parameters for slider -->
+    </div>
+
+    <h2 class="RangeTextSpaceing">Volume: <!--- Slider title --> <span id="Volume"></span> <!--- Displays slider value --></h2> 
+    
+    <div class="slidecontainer"> <!--- div to style more easily -->
+        <input type="range" min="0" max="10" value="5" class="slider" id="volumeSlider"> <!--- Parameters for slider -->
+    </div>
+
+    <script src="Sliders.js" defer async> <p/></script> <!--- links html document to JavaScript script --></div>

@@ -1,0 +1,175 @@
+/* Main Blue = #2576f7, Grey #777777 */
+
+@font-face {
+    font-family: OpenSans;
+    src: url('../fonts/OpenSans-VariableFont_wdth\,wght.ttf')  format('truetype');
+  }
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "SUSE";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    width: 40vh;
+    border-right: 2px solid lightgrey;
+    justify-content: center;
+}
+
+.navbtn {
+    border-radius: 0px;
+    box-shadow: none;
+    border-bottom: 2px solid lightgrey;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    height: 10vh;
+    font-size: 4vh;
+    width: 250px;
+}
+
+.navbtn:active {
+    border-bottom: 2px solid #2576f7;
+    border-right: none;
+    border-left: none;
+    border-top: 2px solid #2576f7;
+    background-color: lightgrey;
+}
+
+.navbtn:hover {
+    border-bottom: 2px solid #2576f7;
+    border-right: none;
+    border-left: none;
+    border-top: 2px solid #2576f7;
+    background-color: lightgrey;
+}
+
+.navbtnconnected {
+    border-radius: 0px;
+    box-shadow: none;
+    border-bottom: 2px solid #2576f7;
+    border-right: none;
+    border-left: none;
+    border-top: 2px solid #2576f7;
+    height: 10vh;
+    font-size: 4vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo {
+    height: 25vh;
+    width: 28vh;
+}
+
+.slidecontainer {
+    width: 90%; /* sets the width of the slider to fit the whole page (within margins) */
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 5%;
+}
+
+.slider {
+    -webkit-appearance: none; /* Overrides default styles */
+    appearance: none;
+    width: 90%; /* full width of page */
+    height: 25px; /* can change if we want a different height */
+    border-radius: 5px;
+    background: #777777; /* grey */
+    outline: none; /* can be changed if we want an outline */
+    opacity: 0.7; /* transparency */
+    -webkit-transition: .2s; /* transition time when hovering */
+    transition: opacity .2s;
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.slider::-moz-range-thumb {
+    width: 40px; /* width of slider handle */
+    height: 25px; /* height of slider handle */
+    background: #2576f7; /* colour of slider handle */
+    border-radius: 20px; /* circle */
+    border-color: #ffffff; /* white */
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.navbtnetc {
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 7vh;
+}
+
+.navbtnhome {
+    margin-top: 3vh;
+    border-top: 2px solid lightgrey;
+}
+
+.widgets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 4vh;
+}
+
+.wdgt {
+    width: 134vh;
+    height: 35vh;
+    font-family: "SUSE";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+
+.wdgtsmall {
+    width: 65vh;
+    height: 45vh;
+}
+
+.row {
+    display: flex;
+    gap: 4vh;
+}
+
+.wdgtsmall:hover {
+    border: 2px solid #2576f7;
+    background-color: lightgrey;
+}
+
+.wdgt:hover {
+    border: 2px solid #2576f7;
+    background-color: lightgrey;
+}
+
+.navbtn span {
+    font-family: "OpenSans";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+

@@ -1,0 +1,11 @@
+/* Main Blue = #2576f7, Grey #777777 */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500&display=swap');
+
+h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #2576f7;
+    margin-bottom: 1rem;
+}

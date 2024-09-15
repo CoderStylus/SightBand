@@ -19,5 +19,8 @@
   "homepage": "https://github.com/coderstylus/sightband#readme",
   "devDependencies": {
     "electron": "^32.0.1"
+  },
+  "dependencies": {
+    "serialport": "^12.0.0"
   }
 }
