@@ -1,11 +1,320 @@
 /* Main Blue = #2576f7, Grey #777777 */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500&display=swap');
+@font-face {
+    font-family: OpenSans;
+    src: url('../fonts/OpenSans-VariableFont_wdth\,wght.ttf')  format('truetype');
+  }
 
-h1 {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 500;
-    font-size: 2.5rem;
-    color: #2576f7;
-    margin-bottom: 1rem;
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "OpenSans";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
+
+header {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    width: 40vh;
+    border-right: 2px solid lightgrey;
+    justify-content: center;
+}
+
+.navbtn {
+    border-radius: 0px;
+    box-shadow: none;
+    border-bottom: 2px solid lightgrey;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    height: 10vh;
+    font-size: 4vh;
+    width: 250px;
+}
+
+.navbtn:active {
+    border-bottom: 2px solid #2576f7;
+    border-right: none;
+    border-left: none;
+    border-top: 2px solid #2576f7;
+    background-color: lightgrey;
+}
+
+.navbtn:hover {
+    border-bottom: 2px solid #2576f7;
+    border-right: none;
+    border-left: none;
+    border-top: 2px solid #2576f7;
+    background-color: lightgrey;
+}
+
+.navbtnstatusConnected {
+    border-radius: 0px;
+    box-shadow: none;
+    border-right: none;
+    border-left: none;
+    height: 10vh;
+    font-size: 4vh;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    width: 250px;
+}
+
+.navbtnstatusDisconnected {
+    border-radius: 0px;
+    box-shadow: none;
+    border-right: none;
+    border-left: none;
+    height: 10vh;
+    font-size: 4vh;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    width: 250px;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 175vh;
+}
+
+
+.logo {
+    height: 25vh;
+    width: 28vh;
+}
+
+.slidecontainer {
+    width: 90%; /* sets the width of the slider to fit the whole page (within margins) */
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 5%; 
+}
+
+.slider {
+    -webkit-appearance: none; /* Overrides default styles */
+    appearance: none;
+    width: 90%; /* full width of page */
+    height: 25px; /* can change if we want a different height */
+    border-radius: 5px;
+    background: #777777; /* grey */
+    outline: none; /* can be changed if we want an outline */
+    opacity: 0.7; /* transparency */
+    -webkit-transition: .2s; /* transition time when hovering */
+    transition: opacity .2s;
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.slider::-moz-range-thumb {
+    width: 40px; /* width of slider handle */
+    height: 25px; /* height of slider handle */
+    background: #2576f7; /* colour of slider handle */
+    border-radius: 20px; /* circle */
+    border-color: #ffffff; /* white */
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.navbtnetc {
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 7vh;
+}
+
+.navbtnhome {
+    margin-top: 3vh;
+    border-top: 2px solid lightgrey;
+}
+
+.widgets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 4vh;
+}
+
+.wdgt {
+    width: 134vh;
+    height: 45vh;
+    font-family: "SUSE";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+    
+
+.wdgtsmall {
+    width: 65vh;
+    height: 45vh;
+    border: 2px solid lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    gap: 4vh;
+}
+
+.wdgtsmall:hover {
+    border: 2px solid #2576f7;
+    background-color: lightgrey;
+}
+
+
+.navbtn span {
+    font-family: "OpenSans";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.alertTableHomepage {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100vh;
+}
+
+.alertTableHomepage td, .alertTableHomepage th {
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+.sliderText {
+    font-family: "OpenSans";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sliderValue {
+    font-family: "OpenSans";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dataheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 3vh;
+}
+
+.button {
+    border-radius: 0px;
+    box-shadow: none;
+    height: 10vh;
+    font-size: 2vh;
+    width: 20vh;
+    height: 6vh;
+    border: 2px solid #2576f7;
+}
+
+.button:hover {
+    background-color: lightgrey;
+}
+
+.dataguicontainer {
+    margin-left: 35vh;
+}
+
+
+/* OVERLAY CODE */
+/* from https://codepen.io/peiche/pen/kQwYVJ */
+
+
+
+.popup a {
+    color: #fff;
+    text-decoration: none;
+ }
+ 
+ 
+ 
+ .popup {
+    position: fixed;
+    padding: 10px;
+    max-width: 500px;
+    border-radius: 0.5em;
+    top: 50%;
+    left: 50%;
+    color: #000;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255,255,255,1);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s, visibility 0s linear .5s;
+    z-index: 1;
+ }
+ 
+ .popup:target {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+ }
+ 
+ .popup .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 5px;
+    color: #000;
+    transition: color .3s;
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: 700;
+ }
+ 
+ .popup .close:hover {
+    color: #f00;
+ }
+ 
+ .popup .close-popup {
+    background-color: rgba(0,0,0,.7);
+    cursor: default;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility 0s linear .5s;
+ }
+ 
+ .popup:target + .close-popup {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+ }
+ 

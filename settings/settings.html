@@ -3,13 +3,65 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homepage.css">
-    <script src="homepage.js"></script>
+    <link rel="stylesheet" href="settings.css">
+    <script src="settings.js" defer></script> 
     <title>SightBand</title>
   </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+
+  <header>
+    <img src="../images/logo.jpg" alt="Home" class="logo">
+    <a href="../homepage/homepage.html">
+      <button class="navbtn navbtnhome">
+        <span>Home</span>
+      </button>
+    </a>
+    <a href="../settings/settings.html">
+      <button class="navbtn navbtnsettings">
+      <span>Settings</span>
+      </button>
+    </a>
+    <a href="../data/data.html">
+      <button class="navbtn navbtndata">
+        <span>Data</span>
+      </button>
+    </a>
+    <a href="../advanced/advanced.html">
+      <button class="navbtn navbtnadvanced">
+        <span>Advanced</span>
+      </button>
+    </a>
+    <button class="navbtn navbtnetc">
+      <span>ETC</span>
+    </button>
+    <button class="navbtn" id="connectionStatusButton">
+      <span id="connectionStatusText">Disconnected</span>
+    </button>
+</header>
+
+<body> 
+  <div class="wdgt3Homepage wdgt"> 
+    <h2 class="sliderText">Vibration Intensity:</h2>  <!--- Slider title -->
+    <span id="VibrationIntensity" class="sliderValue"></span> <!--- displays slider value -->
+    <div class="slidecontainer"> <!--- div to style more easily -->
+      <input type="range" min="1" max="10" value="5" class="slider" id="vibrationSlider"> <!--- Parameters for slider -->
+    </div>
+
+    <h2 class="sliderText">Volume:</h2> <!--- Slider title -->
+    <span id="Volume" class="sliderValue"></span> <!--- Displays slider value -->
+    <div class="slidecontainer"> <!--- div to style more easily -->
+      <input type="range" min="1" max="10" value="5" class="slider" id="volumeSlider"> <!--- Parameters for slider -->
+    </div>
+  </div>
+</div>  
+
+<div class="wdgt2Homepage wdgtsmall"> 
+  <p>Vibration Enabled: <input type="checkbox"></p>
+  <p>Volume Enabled: <input type="checkbox"></p>
+</div>
+</div>
+
+</body>
+
 </html>

@@ -3,13 +3,123 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homepage.css">
-    <script src="homepage.js"></script>
+    <link rel="stylesheet" href="data.css">
+    <script src="data.js" defer></script> 
     <title>SightBand</title>
   </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+
+  <header>
+    <img src="../images/logo.jpg" alt="Home" class="logo">
+    <a href="../homepage/homepage.html">
+      <button class="navbtn navbtnhome">
+        <span>Home</span>
+      </button>
+    </a>
+    <a href="../settings/settings.html">
+      <button class="navbtn navbtnsettings">
+      <span>Settings</span>
+      </button>
+    </a>
+    <a href="../data/data.html">
+      <button class="navbtn navbtndata">
+        <span>Data</span>
+      </button>
+    </a>
+    <a href="../advanced/advanced.html">
+      <button class="navbtn navbtnadvanced">
+        <span>Advanced</span>
+      </button>
+    </a>
+    <button class="navbtn navbtnetc">
+      <span>ETC</span>
+    </button>
+    <button class="navbtn" id="connectionStatusButton">
+      <span id="connectionStatusText">Disconnected</span>
+    </button>
+</header>
+
+<body>
+  <div class="dataguicontainer">
+    <div class="dataheader">
+      <h1>All Data</h1>
+      <a href="#popup"><button class="downloadDataButton button" id="downloadDataButton">Download Data</button></a>
+      <a href="#popup"><button class="deleteDataButton button" id="deleteDataButton">Delete Data</button></a>
+      <a href="#popup"><button class="graphsButton button" id="graphsButton">Graphs</button></a>
+    </div> 
+        <table class="alertTableHomepage">
+          <tr>
+            <th>Time</th>
+            <th>Date</th>
+            <th>Alert Type</th>
+          </tr> 
+          <tr>
+            <td>N/A</td>    
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>N/A</td>    
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>N/A</td>    
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>N/A</td>    
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>N/A</td>    
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>N/A</td>    
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>N/A</td>    
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>N/A</td>    
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>N/A</td>    
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>N/A</td>    
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="popup" class="popup">
+        <a href="#" class="close">&times;</a>
+        <h2>Feature not yet available</h2>
+        <p>This is a prototype interface and does not yet include all features. Please wait for hardware communication to be implemented to proceed. Thanks!</p>
+     </div>
+     <a href="#" class="close-popup"></a>
+
+      
+</body>
+
 </html>

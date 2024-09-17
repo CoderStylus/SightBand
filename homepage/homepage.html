@@ -11,30 +11,39 @@
   </head>
 
   <header>
-      <img src="../images/logo.jpg" alt="Home" class="logo">
+    <img src="../images/logo.jpg" alt="Home" class="logo">
+    <a href="../homepage/homepage.html">
       <button class="navbtn navbtnhome">
         <span>Home</span>
-      </button> 
-      <button class="navbtn navbtnsettings">
-        <span>Settings</span>
       </button>
+    </a>
+    <a href="../settings/settings.html">
+      <button class="navbtn navbtnsettings">
+      <span>Settings</span>
+      </button>
+    </a>
+    <a href="../data/data.html">
       <button class="navbtn navbtndata">
         <span>Data</span>
       </button>
+    </a>
+    <a href="../advanced/advanced.html">
       <button class="navbtn navbtnadvanced">
         <span>Advanced</span>
       </button>
-      <button class="navbtn navbtnetc">
-        <span>ETC</span>
-      </button>
-      <button class="navbtn" id="connectionStatusButton">
-        <span id="connectionStatusText">Disconnected</span>
-      </button>
+    </a>
+    <button class="navbtn navbtnetc">
+      <span>ETC</span>
+    </button>
+    <button class="navbtn" id="connectionStatusButton">
+      <span id="connectionStatusText">Disconnected</span>
+    </button>
 </header>
 
 <body>
   <div class="widgets">
     <div class="row">
+      <a href="../data/data.html">
       <div class="wdgt1Homepage wdgtsmall">
         <h1>Recent Alerts</h1>
         <table class="alertTableHomepage">
@@ -60,7 +69,9 @@
           </tr>
         </table>
       </div>
+    </a>
       
+    <a href="../settings/settings.html">
       <div class="wdgt2Homepage wdgtsmall"> 
         <h1>Status</h1>
         <p>Disconnected</p>
@@ -68,6 +79,7 @@
         <p>Volume Enabled: False</p>
       </div>
     </div>
+  </a>
   
     <div class="wdgt3Homepage wdgt"> 
       <h2 class="sliderText">Vibration Intensity:</h2>  <!--- Slider title -->
@@ -75,7 +87,6 @@
       <div class="slidecontainer"> <!--- div to style more easily -->
         <input type="range" min="1" max="10" value="5" class="slider" id="vibrationSlider"> <!--- Parameters for slider -->
       </div>
-  
       <h2 class="sliderText">Volume:</h2> <!--- Slider title -->
       <span id="Volume" class="sliderValue"></span> <!--- Displays slider value -->
       <div class="slidecontainer"> <!--- div to style more easily -->

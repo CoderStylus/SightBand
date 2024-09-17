@@ -1,3 +1,5 @@
+/*
+
 // Prove that the homepage.js file is loaded (for debugging purposes)
 console.log("homepage.js loaded");
 
@@ -12,17 +14,16 @@ const parser = port.pipe(new Readline({ delimiter: '\r\n' }));
 // Receive data from the serial port and log it to the console
 parser.on('data', (data) => {
     console.log('Received data:', data);
-  }); 
+  });
 
+*/
 
 // Change the color of the connection status button based on the connection status
 var connectionStatusText = document.getElementById("connectionStatusText");
 var connectionStatusButton = document.getElementById("connectionStatusButton");
-
 if (connectionStatusText.innerHTML == "Connected") {
     connectionStatusButton.className = "navbtnstatusConnected";
-}
-
+} 
 if (connectionStatusText.innerHTML == "Disconnected") {
     connectionStatusButton.className = "navbtnstatusDisconnected";
 }
